@@ -34,7 +34,7 @@
 
   <nav class="flex justify-between items-center mt-8">
     <button
-      (click)="prevPage()"
+      
       [disabled]="page <= 1"
       class="bg-cyan-400 font-roboto text-violet-900 px-6 py-2 rounded-lg font-bold hover:bg-cyan-300 disabled:opacity-50 disabled:hover:bg-cyan-400 transition-all"
     >
@@ -42,7 +42,7 @@
     </button>
     <span class="text-white font-montserrat">Página {{ page }} de {{ pages }}</span>
     <button
-      (click)="nextPage()"
+
       [disabled]="page >= pages"
       class="bg-cyan-400 font-roboto text-violet-900 px-6 py-2 rounded-lg font-bold hover:bg-cyan-300 disabled:opacity-50 disabled:hover:bg-cyan-400 transition-all"
     >
