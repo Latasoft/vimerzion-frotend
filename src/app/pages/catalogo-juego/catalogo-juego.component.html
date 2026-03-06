@@ -51,11 +51,11 @@
   </nav>
 </section>
 <div *ngIf="selectedJuego" class="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50 p-4">
-  <div class="bg-white p-8 rounded-2xl shadow-xl relative max-w-lg w-full transition-transform transform scale-100">
+  <div class="bg-white p-8 rounded-2xl shadow-xl relative max-w-lg w-full transition-transform transform scale-100 max-h-[90vh] overflow-y-auto">
     <!-- Botón de Cerrar -->
     <button
       (click)="closeModal()"
-      class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-full w-8 h-8 flex items-center justify-center bg-gray-100 hover:bg-gray-200"
+      class="sticky top-0 float-right text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-full w-8 h-8 flex items-center justify-center bg-gray-100 hover:bg-gray-200 z-10"
     >
       ✕
     </button>
