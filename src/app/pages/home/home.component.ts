@@ -14,8 +14,7 @@ export class HomeComponent {
 
   handleSelection(selection: string): void {
     this.selectionService.setSelection(selection);
-
-    
+    this.router.navigate(['/servicios']);
   }
 
 }
